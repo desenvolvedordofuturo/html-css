@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Work+Sans:ital,wght@0,300;0,400;1,200;1,300;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Work+Sans:ital,wght@0,300;0,400;1,200;1,300;1,400&display=swap');
+
+:root {
+    --fonte1: 'Work Sans', sans-serif;
+
+    --fonte2: 'Kaushan Script', cursive;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -7,6 +17,7 @@
 html, body {
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 
 header {
@@ -18,6 +29,8 @@ header {
 header > h1 {
     padding: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 7vw;
 }
 
 header > p {
@@ -38,6 +51,8 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte1);
+    font-size: 3.5vw;
 }
 
 section.normal {
