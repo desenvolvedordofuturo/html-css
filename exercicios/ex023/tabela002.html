@@ -11,8 +11,9 @@
         }
 
         table {
-            width: 500px;
+            width: 350px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -20,10 +21,28 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
             background-color: gray;
             color: white;
         }
+
+        thead > tr > th {
+            position:sticky;
+            top: -1px;
+            background-color: black;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+            
         td.num {
             text-align: right;
         }
@@ -34,6 +53,7 @@
     <!--
         Anatomia PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TM
             TBODY
@@ -43,10 +63,11 @@
     -->
     
     <table>
+        <caption>População das unidades federativas</caption>
         <thead>
             <tr>
-                <th> Estado</th>
-                <th>População</th>
+                <th scope="col" style="width: 75px;"> Estado</th>
+                <th scope="col" style="width: 35px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -65,10 +86,11 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>84 352 783</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sed et quis impedit commodi molestias repudiandae at. Natus accusantium totam, dignissimos dicta similique autem vel neque in beatae minus minima. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima facere ipsa sunt quos, tempora recusandae labore quo esse officia voluptate, tenetur voluptatibus provident velit mollitia eum in, nisi veniam eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum iure ducimus porro hic at, ullam molestiae asperiores aperiam architecto laborum, esse omnis dolorem corrupti ea reiciendis autem sapiente velit facere.</p>
 </body>
 </html>
