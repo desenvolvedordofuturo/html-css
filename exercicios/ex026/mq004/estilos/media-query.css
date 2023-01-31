@@ -29,7 +29,7 @@ Grandes telas: acima de 1200px
         img#tv {display: none;}
 }
 
-@media screen and(max-width: 992px) and (max-width: 1200px) { /* Desktop */
+@media screen and(max-width: 992px) and (max-width: 1200px); {/* Desktop */
 
 }
 body {
