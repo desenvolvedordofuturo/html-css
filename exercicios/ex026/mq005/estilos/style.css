@@ -9,7 +9,7 @@
 }
 
 
-body html {
+ body,html {
     background-color: rgb(71, 71, 71);
 }
 
@@ -20,17 +20,18 @@ header {
 header > h1 {
     padding: 10px;
     text-align: center;
+    
 }
 
-nav {
+menu {
     display: block;
 }
 
-nav > ul {
+menu > ul {
     list-style-type: none;
 }
  
-nav > ul > li > a {
+menu > ul > li > a {
     display: block;
     padding: 10px;
     text-decoration: none;
@@ -40,7 +41,7 @@ nav > ul > li > a {
     border-top: 2px solid gray;
 }
 
- nav > li > a:hover {
+ menu > li > a:hover {
     background-color: gray;
 }
 
