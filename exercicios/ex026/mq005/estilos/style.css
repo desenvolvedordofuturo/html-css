@@ -22,15 +22,15 @@ header > h1 {
     text-align: center;
 }
 
-menu {
+nav {
     display: block;
 }
 
-menu > ul {
+nav > ul {
     list-style-type: none;
 }
  
-menu > ul > li > a {
+nav > ul > li > a {
     display: block;
     padding: 10px;
     text-decoration: none;
