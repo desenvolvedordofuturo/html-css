@@ -40,7 +40,7 @@ nav > ul > li > a {
     border-top: 2px solid gray;
 }
 
-menu > ul > li > a:hover {
+ nav > li > a:hover {
     background-color: gray;
 }
 
